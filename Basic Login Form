@@ -1,0 +1,23 @@
+import tkinter
+import tkinter.messagebox
+root=tkinter.Tk()
+l1=tkinter.Label(root,text="User name")
+
+l1.pack()
+e1=tkinter.Entry(root)
+
+e1.pack()
+l2=tkinter.Label(root,text="Password")
+
+l2.pack()
+e2=tkinter.Entry(root)
+
+e2.pack()
+def show():
+    x1=e1.get()
+    x2=e2.get()
+    tkinter.messagebox.showinfo("Alert","Name:"+x1+"\nPassword:"+x2)
+b1=tkinter.Button(root,text="Display",command=show)
+
+b1.pack()
+root.mainloop()
